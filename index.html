@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A rock, paper, scisors game using javascript functions and DOM">
+    <meta name="author" content="Eric FC">
+
+    <title>Jan Ken Pon!!</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/cover/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    
+    <div class="container text-center pt-5 myGame" style="width: 75%;">
+        <header class="text-center text-white">
+            <h1>Let's play some Rock, Paper, Scissors!</h1>
+        </header>
+        <main>
+
+            <div class="row justify-content-around pt-4">
+                <button class="btn btn-danger" onclick="jugar('piedra')" id="piedra">Rock</button>
+                <button class="btn btn-primary" onclick="jugar('papel')" id="papel">Paper</button>
+                <button class="btn btn-warning" onclick="jugar('tijera')" id="tijera">Scissors</button>
+            </div>
+            <div class="row pt-4">
+                <div class="col-md-6 col-sm-12">
+                    <h3>You</h3>
+                    <img src="" alt="" id="jugadaUsuario">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <h3>Skynet</h3>
+                    <img src="" alt="" id="jugadaMaquina">
+                </div>
+            </div>
+            <h1 class="pt-3" id="ganador"></h1>
+    </div>
+
+    <footer>
+
+        <div class="row">
+            <div class="col-12 text-center text-white">
+                <p>Copyright 2019</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+    </script>
+    <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
+    <script src="./index.js"></script>
+    <script src="../../Eventos/Math/funciones.js"></script>
+    </main>
+    <footer>
+
+
+    </footer>
+</body>
+
+</html>
