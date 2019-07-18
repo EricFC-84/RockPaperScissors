@@ -14,9 +14,9 @@ function jugar(jugada) {
     for (let i = 0; i < 2; i++) {
         document.querySelectorAll(`body > div > main > div:nth-child(2) > div:nth-child(${i+1}) > h3`)[0].style["display"] = "block";
     }
-    jugadaUsuario["src"] = `./img/${jugada}.jpg`;
+    jugadaUsuario["src"] = `../img/${jugada}.jpg`;
     setTimeout(function () {
-        jugadaMaquina["src"] = `./img/${maquina}.jpg`;
+        jugadaMaquina["src"] = `../img/${maquina}.jpg`;
         let ganador = jugarPPT(jugada, maquina);
         let mensaje = "";
 
